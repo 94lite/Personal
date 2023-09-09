@@ -28,10 +28,12 @@ const PersonalDetails = props => {
     <div className="section personal-details">
       <div className="personal-details-left">
         <Title
-          value={(Name || "").toUpperCase()}
+          value={Name
+            ? (Name || "").toUpperCase()
+            : <i>Name</i>
+          }
           style={{
             marginBottom: 0,
-            marginLeft: "12px",
             textAlign: "left"
           }}
         />
@@ -67,10 +69,10 @@ const Contacts = ({ phone, email, lIn }) => {
         <BsEnvelopeOpenFill />
         {email || <i>email</i>}
       </span>
-      <span>
+      <a href={`https://${lIn}`}>
         <BsLinkedin />
         {lIn || <i>LinkedIn</i>}
-      </span>
+      </a>
     </div>
   )
 };

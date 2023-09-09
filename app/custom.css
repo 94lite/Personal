@@ -78,7 +78,7 @@
   border-left: 1px solid white;
 }
 
-.contact span {
+.contact span, a {
   display: flex;
   align-items: center;
   gap: 4px;
