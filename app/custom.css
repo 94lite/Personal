@@ -1,0 +1,98 @@
+.resume {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 8px;
+}
+
+.resume-section-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.section {
+  width: 100%;
+  max-width: 800px;
+  flex-grow: 1;
+}
+
+.section h4 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.company-period {
+  width: 100%;
+  text-align: right;
+  font-size: small;
+  white-space: nowrap;
+}
+
+.company-location {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+  margin: 4px 0;
+}
+
+.company-location hr {
+  flex-grow: 1;
+  height: 1px;
+}
+
+.company-role {
+  margin-bottom: 16px;
+}
+
+.company-role-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.company-role-role {
+  white-space: nowrap;
+}
+
+.responsibility {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: small;
+  margin-top: 8px;
+}
+
+.responsibility-identity {
+  flex-shrink: 0;
+  width: 30%;
+}
+
+.responsibility-title {
+  margin-top: 8px;
+}
+
+.experience {
+  margin-left: 12px;
+  margin-top: 8px;
+}
+
+.responsibility-content {
+  flex-shrink: 0;
+  width: calc(70% - 12px);
+  padding-left: 12px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+}
+
+.responsibility .skill-list {
+  margin-top: 4px;
+}
+
+.responsibility ul {
+  margin-left: 24px;
+}

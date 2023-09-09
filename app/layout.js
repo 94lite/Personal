@@ -12,9 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        hello
+        (this is where the header goes)
         {children}
-        world
+        (this is where the footer goes)
       </body>
     </html>
   )

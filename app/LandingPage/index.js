@@ -3,18 +3,23 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 
+import WorkExperience from "./Sections/WorkExperience";
+
 const Main = props => {
   // react state management
   useEffect(() => {
-    axios.get("/API/")
+    axios.get("/API/resume-sections")
       .then(res => {
-        console.log(res.data);
+        const { status, data } = res;
+        if (status === 200) {
+          console.log(data);
+        }
       });
   }, []);
 
   return (
-    <div>
-      Hello World
+    <div className="resume">
+      <WorkExperience />
     </div>
   )
 }
