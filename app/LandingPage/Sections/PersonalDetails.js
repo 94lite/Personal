@@ -4,14 +4,14 @@ import { BsPhoneFill, BsEnvelopeOpenFill, BsLinkedin } from "react-icons/bs";
 
 import Title from "@/Components/ResumeSectionTitle";
 
-const PersonalDetails = props => {
+const PersonalDetailsSection = props => {
   // react state management
   const [data, setData] = useState({});
   useEffect(() => {
     axios.get("/API/resume/Personal Details").then(res => {
       const { status, data } = res;
       if (status === 200) {
-        setData(data || []);
+        setData(data || {});
       }
     })
   }, []);
@@ -50,7 +50,7 @@ const PersonalDetails = props => {
 
 const Location = ({ city, country }) => {
   return (
-    <div className="location">
+    <div className="personal-location">
       <span>{city || <i>city</i>}</span>
       <span>•</span>
       <span>{country || <i>country</i>}</span>
@@ -77,4 +77,4 @@ const Contacts = ({ phone, email, lIn }) => {
   )
 };
 
-export default PersonalDetails;
+export default PersonalDetailsSection;

@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 import Title from "@/Components/ResumeSectionTitle";
+import Period from "@/Components/Period";
+import Location from "@/app/Components/Location";
 
 const WorkExperienceSection = (props) => {
   // react state management
@@ -28,7 +30,7 @@ const WorkExperienceSection = (props) => {
     return (
       <div key={Company} className="company">
         <h4 className="company">{Company}</h4>
-        <CompanyPeriod
+        <Period
           startMonth={startMonth} startYear={startYear}
           endMonth={endMonth} endYear={endYear}
           style={{ position: "relative", top: "-1rem", height: 0 }}
@@ -54,7 +56,7 @@ const WorkExperienceSection = (props) => {
           <span className="company-role-role">
             {Level} {Role}
           </span>
-          <CompanyPeriod
+          <Period
             startMonth={startMonth} startYear={startYear}
             endMonth={endMonth} endYear={endYear}
           />
@@ -147,43 +149,9 @@ const WorkExperienceSection = (props) => {
   return (
     <div className="section work-experience">
       <Title value="Work Experience" />
-      {data.map(item => renderCompanyExperience(item))}
+      {data.toReversed().map(item => renderCompanyExperience(item))}
     </div>
   )
-};
-
-const Location = ({ city, country }) => {
-  return (
-    <div className="company-location">
-      <hr />
-      <span>{city}</span>
-      <span>•</span>
-      <span>{country}</span>
-      <hr />
-    </div>
-  )
-};
-
-const CompanyPeriod = ({ startMonth, startYear, endMonth, endYear, style }) => {
-  const start = (
-    <i>{startMonth} {startYear}</i>
-  );
-  
-  let end = <i>Current</i>;
-  if (endYear) {
-    end = (
-      <i>{endMonth} {endYear}</i>
-    );
-  }
-
-  return (
-    <div
-      className="company-period"
-      style={style}
-    >
-      {start} - {end}
-    </div>
-  );
 };
 
 export default WorkExperienceSection;

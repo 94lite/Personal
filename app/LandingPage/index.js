@@ -5,6 +5,7 @@ import axios from "axios";
 
 import PersonalDetails from "./Sections/PersonalDetails";
 import WorkExperience from "./Sections/WorkExperience";
+import EducationSection from "./Sections/Education";
 
 const Main = props => {
   // react state management
@@ -22,6 +23,7 @@ const Main = props => {
     <div className="resume">
       <PersonalDetails />
       <WorkExperience />
+      <EducationSection />
     </div>
   )
 }

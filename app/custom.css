@@ -51,7 +51,7 @@
   padding: 0 8px;
 }
 
-.location {
+.personal-location {
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -107,13 +107,13 @@
   text-transform: uppercase;
 }
 
-.company-period {
+.period {
   text-align: right;
   font-size: small;
   white-space: nowrap;
 }
 
-.company-location {
+.location {
   display: flex;
   gap: 8px;
   justify-content: center;
@@ -122,7 +122,7 @@
   margin: 4px 0;
 }
 
-.company-location hr {
+.location hr {
   flex-grow: 1;
   height: 1px;
 }
@@ -133,6 +133,10 @@
 
 .company-role {
   margin-bottom: 16px;
+}
+
+.company-role:last-child {
+  margin-bottom: unset !important;
 }
 
 .company-role-title {
@@ -184,4 +188,17 @@
 
 .responsibility ul {
   margin-left: 24px;
+}
+
+.qualification-content {
+  margin-bottom: 12px;
+}
+
+.qualification-specialization {
+  font-size: small;
+}
+
+.qualification-institute {
+  font-size: small;
+  margin-top: 8px;
 }
