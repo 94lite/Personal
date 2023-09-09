@@ -51,6 +51,39 @@
   padding: 0 8px;
 }
 
+.location {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: small;
+  margin: 4px 0;
+}
+
+.personal-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: small;
+  white-space: nowrap;
+  margin-left: 8px;
+  padding-left: 8px;
+  border-left: 1px solid white;
+}
+
+.contact span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 .resume-section-title {
   width: 100%;
   text-align: center;
@@ -61,6 +94,11 @@
   width: 100%;
   max-width: 800px;
   flex-grow: 1;
+  margin-bottom: 24px;
+}
+
+.section:last-child {
+  margin-bottom: 0 !important;
 }
 
 .section h4 {

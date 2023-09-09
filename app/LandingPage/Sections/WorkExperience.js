@@ -147,7 +147,7 @@ const WorkExperienceSection = (props) => {
   return (
     <div className="section work-experience">
       <Title value="Work Experience" />
-      {data.toReversed().map(item => renderCompanyExperience(item))}
+      {data.map(item => renderCompanyExperience(item))}
     </div>
   )
 };

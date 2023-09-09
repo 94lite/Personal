@@ -3,6 +3,7 @@
 import React, { useEffect } from "react";
 import axios from "axios";
 
+import PersonalDetails from "./Sections/PersonalDetails";
 import WorkExperience from "./Sections/WorkExperience";
 
 const Main = props => {
@@ -19,6 +20,7 @@ const Main = props => {
 
   return (
     <div className="resume">
+      <PersonalDetails />
       <WorkExperience />
     </div>
   )
