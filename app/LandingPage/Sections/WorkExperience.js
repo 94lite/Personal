@@ -26,7 +26,7 @@ const WorkExperienceSection = (props) => {
       Roles
     } = item;
     return (
-      <div key={Company}>
+      <div key={Company} className="company">
         <h4 className="company">{Company}</h4>
         <CompanyPeriod
           startMonth={startMonth} startYear={startYear}
@@ -34,7 +34,9 @@ const WorkExperienceSection = (props) => {
           style={{ position: "relative", top: "-1rem", height: 0 }}
         />
         <Location city={City} country={Country} />
-        {Roles.toReversed().map((item, i) => renderRole(item, i))}
+        <div className="company-content">
+          {Roles.toReversed().map((item, i) => renderRole(item, i))}
+        </div>
       </div>
     )
   };
@@ -145,7 +147,7 @@ const WorkExperienceSection = (props) => {
   return (
     <div className="section work-experience">
       <Title value="Work Experience" />
-      {data.map(item => renderCompanyExperience(item))}
+      {data.toReversed().map(item => renderCompanyExperience(item))}
     </div>
   )
 };
