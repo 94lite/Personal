@@ -32,6 +32,16 @@
   overflow-x: auto;
 }
 
+.header-left {
+  display: flex;
+  gap: 16px;
+}
+
+.header-right {
+  display: flex;
+  gap: 16px;
+}
+
 .footer-wrapper {
   display: flex;
   justify-content: center;
@@ -213,6 +223,46 @@
 .qualification-institute {
   font-size: small;
   margin-top: 8px;
+}
+
+.tech-stack-page {
+  max-width: 1080px;
+  height: 100%;
+  width: 100%;
+}
+
+.tech-stack-section {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.tech-stack-section .tech-stack-name {
+  font-size: 2em;
+}
+
+.tech-stack-section .tech-stack-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  padding: 16px 16px 4px 24px;
+}
+
+.tech-stack-tech {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tech-stack-tech .tech-icon {
+  font-size: 3em;
+}
+
+.tech-stack-tech .tech-label {
+  font-size: small;
 }
 
 .connect-page {
