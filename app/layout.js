@@ -1,10 +1,10 @@
 import "./globals.css";
 import "./custom.css";
-import { Inter } from "next/font/google";
+import localFont from "next/font/local";
 import Header from "@/Components/Header";
 import Footer from "@/Components/Footer";
 
-const inter = Inter({ subsets: ['latin'] })
+const myFont = localFont({ src: "./Fonts/oktaneue-ultralight-webfont.woff2" });
 
 export const metadata = {
   title: 'Create Next App',
@@ -14,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={myFont.className}>
         <div className="wrapper">
           <div className="upper">
             <div className="header-wrapper">
