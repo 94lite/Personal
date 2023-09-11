@@ -69,7 +69,7 @@ const Contacts = ({ phone, email, lIn }) => {
         <BsEnvelopeOpenFill />
         {email || <i>email</i>}
       </span>
-      <a href={`https://${lIn}`}>
+      <a href={`https://${lIn}`} target="_blank">
         <BsLinkedin />
         {lIn || <i>LinkedIn</i>}
       </a>

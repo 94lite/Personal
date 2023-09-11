@@ -1,9 +1,11 @@
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   return (
     <div className="header">
-      Lite KIM
+      <Link href="/">Lite KIM</Link>
+      <Link href="/Connect">Connect</Link>
     </div>
   )
 };

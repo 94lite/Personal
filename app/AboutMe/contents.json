@@ -1,0 +1,3 @@
+{
+  "description": "Hi I'm Lite\nI'm ${age} years old born and raised in New Zealand.\nI'm an alumni from ${institute} having graduated with a ${degree}.\nI currently work for ${company} as a ${level} level ${role}."
+}
