@@ -28,7 +28,7 @@ const TechStack = props => {
           <SiCss3 />
         </Labelled>
       </TechStackSection>
-      <TechStackSection name="Frameworks">
+      <TechStackSection name={<div>Libraries<br/>+ Frameworks</div>}>
         <Labelled label="Flask">
           <SiFlask />
         </Labelled>
@@ -53,7 +53,7 @@ const TechStack = props => {
           <SiSqlite />
         </Labelled>
       </TechStackSection>
-      <TechStackSection name="Deployment">
+      <TechStackSection name={<div>Deployment<br/>+ Automation</div>}>
         <Labelled label="Docker">
           <SiDocker />
         </Labelled>
@@ -63,8 +63,6 @@ const TechStack = props => {
         <Labelled label="AWS">
           <SiAmazonaws />
         </Labelled>
-      </TechStackSection>
-      <TechStackSection name="Automation">
         <Labelled label="Ansible">
           <SiAnsible />
         </Labelled>

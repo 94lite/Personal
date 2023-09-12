@@ -232,6 +232,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-content: space-evenly;
   gap: 0 32px;
   padding: 0 8px;
 }
@@ -239,31 +240,34 @@
 .tech-stack-section {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 16px;
   margin-bottom: 24px;
 }
 
 .tech-stack-section .tech-stack-name {
-  font-size: 2em;
+  /* font-size: 1em; */
 }
 
 .tech-stack-section .tech-stack-list {
   display: flex;
-  gap: 24px;
+  gap: 8px;
   flex-wrap: wrap;
+  justify-content: center;
   border-top: 1px solid white;
   border-left: 1px solid white;
-  padding: 16px 16px 4px 24px;
+  padding: 16px 8px 4px 16px;
 }
 
 .tech-stack-tech {
+  flex: 1 1 0;
+  width: 72px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .tech-stack-tech .tech-icon {
-  font-size: 3em;
+  font-size: 36px;
 }
 
 .tech-stack-tech .tech-label {
